@@ -18,54 +18,48 @@ Name: Denis Njiru
 
 Reg Number: EB3/61541/22 
 
-Code Explanation 
 
-Fibonacci Series 
+1. Fibonacci Series in C++
+The Fibonacci series is a sequence where each number is the sum of the two preceding ones, starting from 0 and 1. The sequence looks like this: 0, 1, 1, 2, 3, 5, 8, 13, ...
 
-The Fibonacci sequence is generated using iteration. Given n terms, it prints the series using two variables that store previous values.  
+Explanation of the Algorithm:
+Initialization: Start with the first two terms of the series, t1 = 0 and t2 = 1.
 
-Explanation of Fibonacci Program  
+Input Validation: Check if the input n is valid (positive integer).
 
-What is the Fibonacci Series? The Fibonacci series is a sequence where each number is the sum of the previous two numbers. The first two terms are always 0 and 1. Mathematically: 𝐹 ( 𝑛 ) = 𝐹 ( 𝑛 − 1 ) + 𝐹 ( 𝑛 − 2 ) F(n)=F(n−1)+F(n−2) where: 𝐹 ( 0 ) = 0 F(0)=0 𝐹 ( 1 ) = 1 F(1)=1 𝐹 ( 2 ) = 0 + 1 = 1 F(2)=0+1=1 𝐹 ( 3 ) = 1 + 1 = 2 F(3)=1+1=2 𝐹 ( 4 ) = 1 + 2 = 3 F(4)=1+2=3, and so on.  
+Base Cases:
 
-Code Breakdown Input Handling The user enters how many terms they want. Loop Execution A for loop runs n times, printing each Fibonacci number. We use two variables, first and second, to keep track of the previous two numbers. Efficient Calculation Each Fibonacci number is calculated without recursion, making it efficient. 
+If n == 1, print only the first term (0).
 
-How to Compile & Run: ``sh g++ fibonacci.cpp -o fibonacci ./fibonacci 
+If n == 2, print the first two terms (0, 1).
 
-Factorial Calculation 
+Iteration:
 
-The factorial of a number n is computed iteratively. The factorial of n is given by: n! = n × (n-1) × (n-2) × ... × 1 
+For n > 2, calculate the next term as the sum of the previous two terms (nextTerm = t1 + t2).
 
-How to Compile & Run:  
+Print the next term and update t1 and t2 for the next iteration.
 
-``sh g++ factorial.cpp -o factorial ./factorial 
+Output: Print the Fibonacci series up to n terms.
 
-Explanation of Factorial Program 
 
-What is Factorial? 
+2. Factorial Calculation in C++
+The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, 5! = 5 × 4 × 3 × 2 × 1 = 120.
 
-The factorial of a number nnn is the product of all numbers from 111 to nnn: n!=n×(n−1)×(n−2)×...×1n! = n \times (n-1) \times (n-2) \times ... \times 1n!=n×(n−1)×(n−2)×...×1 
+Explanation of the Algorithm:
+Initialization: Start with result = 1 to store the factorial value.
 
-Example: 
+Input Validation: Check if the input n is valid (non-negative integer).
 
-5!=5×4×3×2×1=1205! = 5 \times 4 \times 3 \times 2 \times 1 = 1205!=5×4×3×2×1=120 
+Iteration:
 
-Code Breakdown 
+Use a loop to multiply result by each integer from 1 to n.
 
-Input Handling 
+This accumulates the product of all integers in the range [1, n].
 
-The user is prompted to enter a number. 
+Output: Return the computed factorial value.
 
-Factorial Calculation 
+Key Differences in Algorithms:
+Fibonacci Series: Relies on iterative addition of the last two terms to generate the sequence.
 
-If the number is 0 or 1, the function immediately returns 1. 
-
-Otherwise, a for loop runs from 2 to n, multiplying all numbers. 
-
-Efficiency Considerations 
-
-Uses an iterative approach (instead of recursion) to avoid stack overflow for large numbers. 
-
-Uses a long long variable to handle large factorial values. 
-
+Factorial: Relies on iterative multiplication of integers from 1 to n.
  
