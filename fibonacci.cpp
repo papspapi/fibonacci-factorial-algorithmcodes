@@ -1,5 +1,7 @@
 #include <iostream>
+#include <chrono>
 using namespace std;
+using namespace chrono;
 
 // Function to generate Fibonacci series up to n terms
 void fibonacci(int n) {
@@ -35,8 +37,13 @@ int main() {
     cout << "Enter the number of terms: ";
     cin >> n;
 
-    // Call the fibonacci function
+    // Measure runtime
+    auto start = high_resolution_clock::now();
     fibonacci(n);
+    auto stop = high_resolution_clock::now();
+
+    // Display runtime
+    cout << "Time taken: " << duration_cast<microseconds>(stop - start).count() << " microseconds\n";
 
     return 0;
 }
