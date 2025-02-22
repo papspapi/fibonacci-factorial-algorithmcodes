@@ -41,6 +41,9 @@ Print the next term and update t1 and t2 for the next iteration.
 
 Output: Print the Fibonacci series up to n terms.
 
+Runtime Measurement:
+We measure the time taken to compute the Fibonacci series using the chrono library. The execution time is calculated by capturing the start and end times and computing the difference in microseconds.
+
 
 2. Factorial Calculation in C++
 The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, 5! = 5 × 4 × 3 × 2 × 1 = 120.
@@ -58,8 +61,11 @@ This accumulates the product of all integers in the range [1, n].
 
 Output: Return the computed factorial value.
 
+Runtime Measurement:
+The time taken to compute the factorial is measured using the chrono library, capturing the execution time in microseconds.
+
 Key Differences in Algorithms:
 Fibonacci Series: Relies on iterative addition of the last two terms to generate the sequence.
 
 Factorial: Relies on iterative multiplication of integers from 1 to n.
- 
+
