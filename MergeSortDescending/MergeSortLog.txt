@@ -1,0 +1,1 @@
+Sorted 1,000,000 elements in 296.19 ms
