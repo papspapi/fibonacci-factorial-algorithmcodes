@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Project Overview
+## 💌 Project Overview
 This project implements the **Merge Sort algorithm** in C#, sorting numbers in **descending order**. The program generates a random dataset, sorts it using Merge Sort, and logs execution details.
 
 ---
@@ -34,6 +34,15 @@ cd MergeSortDescending
 ```sh
 dotnet run
 ```
+
+### **Alternative Method**
+If you don't want to clone the repository, you can manually copy the raw contents of `Program.cs`, create a new file in your local machine, and then run it:
+1. **Create a new file** named `Program.cs`.
+2. **Paste the copied code** from `Program.cs`.
+3. **Run the program** using the command:
+   ```sh
+   dotnet run Program.cs
+   ```
 
 ### **4️⃣ Expected Output**
 The program sorts **1,000,000 random numbers** and displays execution time:
@@ -64,12 +73,12 @@ Log saved to MergeSortLog.txt
 
 ---
 
-## 📜 License
+## 🐝 License
 This project is open-source. Feel free to modify and use it as needed!
 
 ---
 
-## 📬 Contact
+## 💍 Contact
 For questions or contributions, reach out via GitHub or email!
 
 ---
